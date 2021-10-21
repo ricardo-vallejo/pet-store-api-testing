@@ -6,7 +6,7 @@ public class User{
 	private String password;
 	private int userStatus;
 	private String phone;
-	private int id;
+	private long id;
 	private String email;
 	private String username;
 
@@ -50,11 +50,11 @@ public class User{
 		return phone;
 	}
 
-	public void setId(int id){
+	public void setId(long id){
 		this.id = id;
 	}
 
-	public int getId(){
+	public long getId(){
 		return id;
 	}
 

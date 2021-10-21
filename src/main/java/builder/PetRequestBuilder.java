@@ -14,11 +14,11 @@ public class PetRequestBuilder {
         pet = new Pet();
     }
 
-    public PetRequestBuilder registerPet(){
+    public static PetRequestBuilder registerPet(){
         return new PetRequestBuilder();
     }
 
-    public PetRequestBuilder withId(int id){
+    public PetRequestBuilder withId(long id){
         this.pet.setId(id);
         return this;
     }

@@ -10,16 +10,16 @@ public class PlaceOrderRequestBuilder {
         placeOrder = new PlaceOrder();
     }
 
-    public PlaceOrderRequestBuilder createOrder(){
+    public static PlaceOrderRequestBuilder createOrder(){
         return new PlaceOrderRequestBuilder();
     }
 
-    public PlaceOrderRequestBuilder withId(int id){
+    public PlaceOrderRequestBuilder withId(long id){
         this.placeOrder.setId(id);
         return this;
     }
 
-    public PlaceOrderRequestBuilder withPetId(int petId){
+    public PlaceOrderRequestBuilder withPetId(long petId){
         this.placeOrder.setPetId(petId);
         return this;
     }

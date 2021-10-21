@@ -14,7 +14,12 @@ public class UserRequestBuilder {
         return new UserRequestBuilder();
     }
 
-    public UserRequestBuilder withId(int id){
+    public UserRequestBuilder withId(long id){
+        this.user.setId(id);
+        return this;
+    }
+
+    public UserRequestBuilder withId(Long id){
         this.user.setId(id);
         return this;
     }
@@ -50,6 +55,11 @@ public class UserRequestBuilder {
     }
 
     public UserRequestBuilder withUserStatus(int userStatus){
+        this.user.setUserStatus(userStatus);
+        return this;
+    }
+
+    public UserRequestBuilder withUserStatus(Integer userStatus){
         this.user.setUserStatus(userStatus);
         return this;
     }
