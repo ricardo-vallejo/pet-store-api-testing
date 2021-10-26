@@ -3,6 +3,8 @@ package data.factory;
 import com.github.javafaker.Faker;
 import model.PlaceOrder;
 
+import java.time.LocalDateTime;
+
 import static builder.PlaceOrderRequestBuilder.createOrder;
 
 public class OrderDataFactory {
@@ -18,7 +20,7 @@ public class OrderDataFactory {
                 .withId(FAKER.number().randomNumber())
                 .withPetId(FAKER.number().randomNumber())
                 .withQuantity(FAKER.number().randomDigit())
-                .withShipDate(FAKER.date().toString())
+                .withShipDate(LocalDateTime.now().toString())
                 .withStatus(OrderStatus.PLACED.name())
                 .withComplete(true)
                 .build();
@@ -29,7 +31,7 @@ public class OrderDataFactory {
                 .withId(FAKER.number().randomNumber())
                 .withPetId(FAKER.number().randomNumber())
                 .withQuantity(FAKER.number().randomDigit())
-                .withShipDate(FAKER.date().toString())
+                .withShipDate(LocalDateTime.now().toString())
                 .withStatus(OrderStatus.APPROVED.name())
                 .withComplete(true)
                 .build();
@@ -40,7 +42,7 @@ public class OrderDataFactory {
                 .withId(FAKER.number().randomNumber())
                 .withPetId(FAKER.number().randomNumber())
                 .withQuantity(FAKER.number().randomDigit())
-                .withShipDate(FAKER.date().toString())
+                .withShipDate(LocalDateTime.now().toString())
                 .withStatus(OrderStatus.DELIVERED.name())
                 .withComplete(true)
                 .build();
@@ -51,7 +53,7 @@ public class OrderDataFactory {
                 .withId(FAKER.number().randomNumber())
                 .withPetId(FAKER.number().randomNumber())
                 .withQuantity(FAKER.number().randomDigit())
-                .withShipDate(FAKER.date().toString())
+                .withShipDate(LocalDateTime.now().toString())
                 .withStatus(OrderStatus.PLACED.name())
                 .withComplete(false)
                 .build();
