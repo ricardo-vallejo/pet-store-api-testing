@@ -37,3 +37,9 @@ bin/
 build/
 /bin1/
 java/build/**
+
+
+# Allure
+.allure/
+target/allure-results/
+logs/
