@@ -2,7 +2,12 @@ package model;
 
 public class TagsItem{
 	private String name;
-	private int id;
+	private long id;
+
+	public TagsItem(long id, String name) {
+		this.id = id;
+		this.name = name;
+	}
 
 	public void setName(String name){
 		this.name = name;
@@ -12,11 +17,11 @@ public class TagsItem{
 		return name;
 	}
 
-	public void setId(int id){
+	public void setId(long id){
 		this.id = id;
 	}
 
-	public int getId(){
+	public long getId(){
 		return id;
 	}
 }

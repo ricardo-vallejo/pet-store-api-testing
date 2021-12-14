@@ -4,9 +4,9 @@ public class User{
 	private String firstName;
 	private String lastName;
 	private String password;
-	private int userStatus;
+	private Integer userStatus;
 	private String phone;
-	private int id;
+	private Long id;
 	private String email;
 	private String username;
 
@@ -34,11 +34,11 @@ public class User{
 		return password;
 	}
 
-	public void setUserStatus(int userStatus){
+	public void setUserStatus(Integer userStatus){
 		this.userStatus = userStatus;
 	}
 
-	public int getUserStatus(){
+	public Integer getUserStatus(){
 		return userStatus;
 	}
 
@@ -50,11 +50,11 @@ public class User{
 		return phone;
 	}
 
-	public void setId(int id){
+	public void setId(Long id){
 		this.id = id;
 	}
 
-	public int getId(){
+	public Long getId(){
 		return id;
 	}
 

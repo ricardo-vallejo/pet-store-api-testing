@@ -14,7 +14,7 @@ public class UserRequestBuilder {
         return new UserRequestBuilder();
     }
 
-    public UserRequestBuilder withId(int id){
+    public UserRequestBuilder withId(Long id){
         this.user.setId(id);
         return this;
     }
